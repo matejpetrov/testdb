@@ -1,0 +1,15 @@
+<h1>Listing articles</h1>
+ 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+ 
+  <% @articles.each do |article| %>
+    <%= render article%>
+  <% end %>
+
+  <%= link_to 'Add new article', new_article_path %>
+
+</table>
